@@ -1,9 +1,35 @@
-!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
 <body>
+  <h1>Hello, World!</h1>
+  <p>This is my first basic HTML project.</p>
+  
+  <p>Button clicked: <span id="count">0</span> times</p>
+  <button onclick="increase()">Click Me</button>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-
+  <script>
+    let count = 0;
+    function increase() {
+      count++;
+      document.getElementById("count").textContent = count;
+    }
+  </script>
 </body>
 </html>
